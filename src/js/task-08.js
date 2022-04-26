@@ -17,7 +17,10 @@ function onFormSubmit(e) {
     email,
     password,
   };
-  console.log(formValue);
 
-  formEl.reset();
+  if (email !== "" && password !== "") {
+    console.log(formValue);
+
+    formEl.reset();
+  }
 }
